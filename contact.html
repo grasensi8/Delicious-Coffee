@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Information Delicious Coffee">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact of Delicious Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-cafe.png">
+    <!--Enlazamos la librería de Font Awesome para importar los iconos del documento-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--Importamos la fuente tipográfica directamente de Google fonts: Merriweather-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!--Botón para saltar directamente al contenido de la web-->
+    <a class="skip-link" href="#main-content" tabindex="1">Skip directly to main content</a>
+    <!--Cabecera/Menú de navegación-->
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" tabindex="2">Home</a></li>
+          <li><a href="how.html" tabindex="3">Make a coffee</a></li>
+          <li><a href="contact.html" class="active" tabindex="4">Contact</a></li>
+        </ul>
+      </nav>
+    </header>  
+
+    <!--Contenido principal de la web-->
+    <main id="main-content" class="main-container">
+      <!--Sección 1/Contact Us-->
+      <section>
+          <h1>Contact Us</h1>
+          <p class="centered-text">We'd love to hear from you! Fill out the form or reach out through our fake contact details below.</p>
+      </section>
+
+      <!--Sección 2/Visit our Store Banner-->
+      <section class="banner2">
+        <h2 class="h2_white_centered">Visit Our Store</h2>
+        <address>
+          Address: 123 Fake Street, City<br>
+          Phone: <a href="tel:+34600123456">+34 600 123 456</a><br>
+          Email: <a href="mailto:contact@deliciouscoffee.com">contact@deliciouscoffee.com</a>
+        </address>
+        <div class="group-followus-socialmedia">
+          <p>Follow us on:</p>
+          <div class="banner-socialmedia">
+            <a href="#" aria-label="Facebook"><span class="fab fa-facebook-f"></span></a>
+            <a href="#" aria-label="Instagram"><span class="fab fa-instagram"></span></a>
+            <a href="#" aria-label="X (Twitter)"><span class="fab fa-x-twitter"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <!--Sección 3 - Contact Form-->
+      <section class="contact-form-section">
+        <form action="#" method="post">
+          <h2 class="h2_brown_centered">Get in Touch</h2>
+          <p class="centered-text">Fill out the form below and we will get back to you as soon as possible.</p>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <ul>
+              <li>
+                <label for="name"></label>
+                <input class="input-line" type="text" id="name" name="username" placeholder="Your Name" aria-label="Your Name">
+              </li>
+              <li>
+                <label for="mail"></label>
+                <input class="input-line" type="email" id="mail" name="usermail" placeholder="Your Email" aria-label="Your Email">
+              </li>
+              <li>
+                <label for="phone"><span class="separation-span">Phone Number (optional)</span></label>
+                <input class="input-line" type="tel" id="phone" name="phonenumber" placeholder="+34 600 123 456">
+              </li>
+              <li>
+                <label for="date"><span>Date of Birth</span></label>
+                <input class="input-line" type="date" id="date" name="expiration">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your Coffee Preferences</legend>
+            <ul>
+              <li>
+                <label for="coffee-type"><span class="separation-span">Favorite Coffee</span></label>
+                <select class="input-line" id="coffee-type" name="coffeetype">
+                  <option value="" disabled selected>Select Coffee Type</option>
+                  <option value="Espresso">Espresso</option>
+                  <option value="Capuccino">Capuccino</option>
+                  <option value="Latte">Latte</option>
+                </select>
+              </li>
+              <li>How do you take your coffee?
+                <ul class="radio-inputs-list">
+                  <li>
+                    <label for="title_1">
+                      <input type="radio" id="title_1" name="title" value="Black" >Black
+                    </label>
+                  </li>
+                  <li>
+                    <label for="title_2">
+                      <input type="radio" id="title_2" name="title" value="With Milk" >With Milk
+                    </label>
+                  </li>
+                  <li>
+                    <label for="title_3">
+                      <input type="radio" id="title_3" name="title" value="Oat Milk" >Oat Milk
+                    </label>
+                  </li>
+                </ul> 
+              </li>
+              <li>
+                <label for="message"><span>Message</span></label>
+                <textarea class="input-line" id="message" name="usermessage" rows="4" placeholder="Write your message..."></textarea>
+              </li>
+            </ul>           
+          </fieldset>
+
+          <p>
+            <label for="privacy-policy">
+              <input type="checkbox" id="privacy-policy" name="privacy-policy" required aria-required="true">
+              I accept the <a href="#">Privacy Policy</a>
+            </label>
+          </p>
+          <button type="submit" aria-label="Send Message">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+      <!--Info de Contacto y Accesos rápidos de la web-->
+      <div class="footer-container">
+        <div class="footer-info">
+          <ul>
+            <li>© 2025 Delicious Coffee</li>
+            <li class="footer-text-cursive">Address: 123 Fake Street, City</li>
+            <li class="footer-text-cursive">Phone: <a href="tel:+34600123456">+34 600 123 456</a></li>
+            <li class="footer-text-cursive">Email: <a href="mailto:contact@deliciouscoffee.com">contact@deliciouscoffee.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how.html">How to make a good coffee</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Iconos RR.SS.-->
+      <div>
+        <ul class="footer-socialmedia">
+          <li><a href="#" aria-label="Facebook"><span class="fab fa-facebook-f"></span></a></li>
+          <li><a href="#" aria-label="Instagram"><span class="fab fa-instagram"></span></a></li>
+          <li><a href="#" aria-label="X (Twitter)"><span class="fab fa-x-twitter"></span></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

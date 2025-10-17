@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website Delicious Coffee">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delicious Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-cafe.png">
+    <!--Enlazamos la librería de Font Awesome para importar los iconos del documento-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--Importamos la fuente tipográfica directamente de Google fonts: Merriweather-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--Botón para saltar directamente al contenido principal de la web-->
+    <a class="skip-link" href="#main-content" tabindex="1">Skip directly to main content</a>
+    <!--Cabecera/Menú de navegación principal-->
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active" tabindex="2">Home</a></li>
+          <li><a href="how.html" tabindex="3">Make a coffee</a></li>
+          <li><a href="contact.html" tabindex="4">Contact</a></li>
+        </ul>
+      </nav>
+      <!--Sección 1/Hero-->
+      <section class="section-hero main-container">
+        <div class="intro-content">
+          <h1>Welcome to Delicious Coffee</h1>
+          <p class="main-text-style">Discover the secrets of great coffee and enjoy its unique aroma and flavor.</p>
+          <a class= "button-animated" href="how.html" tabindex="5">Explore</a>
+        </div>
+        <div class="intro-image">
+          <img src="images/cafe-header.jpg" alt="Two cups of coffee on a wooden table.">
+        </div> 
+      </section>
+    </header>
+
+    <!--Contenido principal de la web-->
+    <main id="main-content" class="main-container">
+      <!--Sección 2/Our Coffes-->
+      <section>
+        <h2 class="h2_brown">Our Coffees</h2>
+        <ul class="coffee-list">
+          <li>
+            <img src="images/espresso.png" alt="Espresso coffee icon ilustration">
+            <h3>Espresso</h3>
+            <p>A strong and concentrated coffee with an intense flavor.</p>
+          </li>  
+          <li>
+            <img src="images/capuchino.png" alt="Capuccino coffee icon ilustration">
+            <h3>Cappuccino</h3>
+            <p>A balanced blend of coffee, milk, and foam.</p>
+          </li>
+          <li>
+            <img src="images/latte.png" alt="Latte coffee icon ilustration">
+            <h3>Latte</h3>
+            <p>Soft and creamy, perfect for enjoying slowly.</p>
+          </li>
+        </ul> 
+      </section>
+
+      <!--Sección 3/Coffee and Inspiration-->
+      <section class="banner">
+        <h2>Coffee and Inspiration</h2>
+        <p class="banner-p-style">Coffee is an excuse to gather, to dream, to create. Every sip transports us to unforgettable moments.
+        <br>Explore the art, literature, and creativity that coffee has inspired throughout history.</p>
+      </section>
+
+      <!--Sección 4/Enjoy Every Sip-->
+      <section>
+        <h2 class="h2_brown_centered centered">Enjoy Every Sip</h2>
+        <div class="section-enjoy">
+          <figure class="section-enjoy-image">
+            <img src="images/coffee-moment.jpg" alt="Serving a cup of coffee with milk.">
+            <figcaption>A peaceful coffee moment</figcaption>
+          </figure>
+                    
+          <div class="section-enjoy-content">
+            <p class="main-text-style"><span class="capital-letter">T</span> ake a moment to savor the rich aroma and deep flavor of your favorite coffee. At Delicious Coffee, 
+            we source the finest beans from sustainable farms to bring you the highest quality brews.</p>
+            <p class="main-text-style">Whether you prefer a strong espresso or a creamy latte, our coffee is crafted to provide a delightful 
+            experience with every sip. Visit us and discover your new favorite blend.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+      <!--Info de Contacto y Accesos rápidos de la web-->
+      <div class="footer-container">
+        <div class="footer-info">
+          <ul>
+            <li>© 2025 Delicious Coffee</li>
+            <li class="footer-text-cursive">Address: 123 Fake Street, City</li>
+            <li class="footer-text-cursive">Phone: <a href="tel:+34600123456">+34 600 123 456</a></li>
+            <li class="footer-text-cursive">Email: <a href="mailto:contact@deliciouscoffee.com">contact@deliciouscoffee.com</a></li>
+            <li>Photo by NastyaSensei: <a href="https://www.pexels.com/photo/two-cups-of-coffee-on-table-2575835/" target="_blank">photo</a></li>
+            <li class="footer-small-text">All images come from Pexels with a <a href="https://creativecommons.org/public-domain/cc0/" target="_blank" rel="noopener">
+              <abbr title="Creative Commons Zero">CC0</abbr></a> license.
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how.html">How to make a good coffee</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Iconos RR.SS.-->
+      <div>
+        <ul class="footer-socialmedia">
+          <li><a href="#" aria-label="Facebook"><span class="fab fa-facebook-f"></span></a></li>
+          <li><a href="#" aria-label="Instagram"><span class="fab fa-instagram"></span></a></li>
+          <li><a href="#" aria-label="X (Twitter)"><span class="fab fa-x-twitter"></span></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body> 
+</html>
